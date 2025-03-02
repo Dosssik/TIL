@@ -1,0 +1,54 @@
+site_name: Today I Learned
+site_url: https://example.com
+theme:
+  name: material
+  icon:
+    logo: material/brain
+  # TODO favicon asset
+  features:
+    - navigation.footer
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/Dosssik
+    - icon: simple/telegram
+      link: https://t.me/Dosssik
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/andrei-dotsenko/
