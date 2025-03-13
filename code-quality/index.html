@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/mkdocs/">
+        <link rel="canonical" href="https://example.com/code-quality/">
       
       
-        <link rel="prev" href="../diagram-example/">
+        <link rel="prev" href="../code-examples/">
       
+      
+        <link rel="next" href="../danish/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>📄 MkDocs - Today I Learned</title>
+        <title>🔬 Code Quality - Today I Learned</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#detekt" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📄 MkDocs
+              🔬 Code Quality
             
           </span>
         </div>
@@ -287,10 +289,29 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../code-quality/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    🔬 Code Quality
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -300,6 +321,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#detekt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detekt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -350,29 +398,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    📄 MkDocs
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,48 +411,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run locally
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -453,26 +440,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#detekt" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Detekt
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run locally
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -492,29 +464,21 @@
 
 
 
-  <h1>📄 MkDocs</h1>
+  <h1>🔬 Code Quality</h1>
 
-<h3 id="examples">Examples</h3>
-<div class="admonition heading">
-<p class="admonition-title">Heading</p>
-<p>Some text </p>
-</div>
-<details class="quote" open="open">
-<summary>Quote</summary>
-<p>Some quote</p>
-</details>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Tip!</p>
-</div>
-<p>More types - <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks-inline">🔗</a></p>
-<p>Diagrams - <a href=""></a></p>
-<h4 id="run-locally">Run locally</h4>
-<div class="highlight"><pre><span></span><code>source venv/bin/activate
-mkdocs serve
-
-# will output: Browser connected: http://127.0.0.1:8000/mkdocs/
-</code></pre></div>
+<h3 id="detekt">Detekt</h3>
+<p>For Kotlin Multiplatform projects Detekt (<code>v1.23.8</code>) won't automatically exclude build folders from scanning (and end up failing with incorrect style for generated code 🤨).
+The solution is to exclude it manually:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">build.gradle.kts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tasks</span><span class="p">.</span><span class="na">withType</span><span class="o">&lt;</span><span class="n">Detekt</span><span class="o">&gt;</span><span class="p">().</span><span class="na">configureEach</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">exclude</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">        </span><span class="n">element</span><span class="p">.</span><span class="na">file</span><span class="p">.</span><span class="na">path</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="s">&quot;/build/generated/&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -547,7 +511,7 @@ mkdocs serve
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../diagram-example/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📈 Diagram examples">
+          <a href="../code-examples/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🧑🏽‍💻 Code examples (temp)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -557,11 +521,27 @@ mkdocs serve
                 Previous
               </span>
               <div class="md-ellipsis">
-                📈 Diagram examples
+                🧑🏽‍💻 Code examples (temp)
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../danish/" class="md-footer__link md-footer__link--next" aria-label="Next: 🇩🇰 Dansk">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🇩🇰 Dansk
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
